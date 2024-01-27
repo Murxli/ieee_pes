@@ -1,0 +1,70 @@
+.navbar-container{
+    @apply w-full h-fit flex justify-center  fixed z-20  top-0 left-0
+}
+
+.scrolled{
+  @apply backdrop-blur-lg bg-slate-300/5
+}
+
+.navbar{
+    @apply p-4 flex place-items-center justify-between w-full font-medium text-lg max-w-7xl box-border transition-all 
+}
+  
+.nav-items{
+    @apply place-items-center justify-evenly hidden sm:flex sm:w-3/5 md:w-2/5
+}
+  
+  
+.nav-items a{
+  @apply text-cyan-500 font-extrabold
+}
+  
+.nav-items a,
+.nav-items a:after,
+.nav-items a:before {
+transition: all .2s;
+}
+.nav-items a:hover {
+color: #15ce21;
+}
+
+nav.stroke ul li a{
+position: relative;
+}
+
+nav.stroke ul li a:after {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+width: 0%;
+content: '.';
+color: transparent;
+background: #aaa;
+height: 1px;
+}
+nav.stroke ul li a:hover:after {
+width: 100%;
+}
+
+  
+p{
+  margin: 0;
+}
+  
+li.clicked a{
+  @apply text-gray-400
+}
+
+aside{
+  transition: right 1.5s ease-in;
+}
+
+.backdrop{
+  @apply fixed top-0 left-0 w-full h-screen bg-white/30 backdrop-blur-xl backdrop-opacity-65 z-40
+}
+
+.nav-open + main{
+  @apply overflow-clip max-h-screen
+}
