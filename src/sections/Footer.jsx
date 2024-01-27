@@ -21,8 +21,8 @@ const Footer = () => {
           <div className="flex flex-col justify-between text-white-400 max-sm:flex-col max-sm:items-center sm:px-12 px-8 sm:py-12 pb-8">
             <div className="flex items-center gap-5 sm:mt-8">
                 {socialLinks.map((icon, index) => (
-                  <a href={icon.href} target="blank">
-                    <div key={index} className="p-4 rounded-full bg-slate-50 cursor-pointer">
+                  <a href={icon.href} target="blank" key={index} >
+                    <div className="p-4 rounded-full bg-slate-50 cursor-pointer">
                       {icon.src}
                     </div>
                   </a>
